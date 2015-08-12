@@ -1,0 +1,66 @@
+//
+// Prefix header for all source files of the 'ASIHttpRequest' target in the 'ASIHttpRequest' project
+//
+
+#import <Availability.h>
+#define FB_KEY @"548049938583188"
+#define TEL_NUMBER @"+6583337783"
+#define SMS_NUMBER @"+6583337783"
+#define EMAIL_ID @"branspk@gmail.com"
+//http://182.72.217.238
+// http://dev.gntstech.com
+
+
+#define REGISTER_URL @"http://dev.gntstech.com/las/ws/offers.php"
+#define EMPLOYERLOGIN_URL @"http://182.72.198.153/jobportal/ws/loginsignup/employerlogin.php"
+#define CANDIDATELOGIN_URL @"http://182.72.198.153/jobportal/ws/loginsignup/employeelogin.php"
+
+
+
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+#define IS_IPHONE6 (([[UIScreen mainScreen] bounds].size.height-667)?NO:YES)
+#define IS_IPHONE6PLUS (([[UIScreen mainScreen] bounds].size.height-738)?NO:YES)
+#define IS_IPHONE4 (([[UIScreen mainScreen] bounds].size.height-480)?NO:YES)
+#define IS_OS_5_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0)
+#define IS_OS_6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
+#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "JSON.h"
+    #import "ASIHTTPRequest.h"
+#import "Dataware.h"
+#import "TapCell1.h"
+#import "SBJSON.h"
+#import "TapCell.h"
+#import "UIImageView+WebCache.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <AVFoundation/AVFoundation.h>
+#import "TapCell3.h"
+#import "TapCell11.h"
+#import "GalleryCell.h"
+#import "UIWindow+YzdHUD.h"
+#import "ProgressHUD.h"
+#import "IQKeyBoardManager.h"
+#import "AFNetworking.h"
+#import "JSQFlatButton.h"
+#import "NewpayslipHome.h"
+#import "SearchJob.h"
+#import "CreateJobAlert.h"
+#import "RefferEmployee.h"
+#import "ApplyHistory.h"
+#import "PostJob.h"
+#import "ViewReport.h"
+#import "ManagePostJob.h"
+#import "ViewControllerLogin.h"
+
+#endif
